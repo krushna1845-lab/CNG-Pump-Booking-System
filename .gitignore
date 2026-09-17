@@ -1,0 +1,29 @@
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Build files
+build/
+bin/
+target/
+
+# Compiled Java
+*.class
+
+# Packaged applications
+*.war
+
+# MySQL local installation
+mysql/
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

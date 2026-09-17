@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin & Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+    <link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-in.html" />
+
+    <title>Register | CNG Booking</title>
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/avatars/back.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .form-control {
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-weight: 600;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .btn-warning:hover {
+            background-color: #e0a800;
+            border-color: #d39e00;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .text-center h1 {
+            color: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="d-flex w-100">
+        <div class="container d-flex flex-column">
+            <div class="row vh-100">
+                <div class="col-sm-10 col-md-9 col-lg-8 mx-auto d-table h-100">
+                    <div class="d-table-cell align-middle">
+
+                        <div class="card p-4">
+                            <div class="card-body p-4">
+                                <div class="text-center mb-4">
+                                    <h1 class="h2">Register</h1>
+                                </div>
+                                <form action="CNG_Pumps_Register" id="CNG_Pumps_Register" method="post">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="pname">Pump Name</label>
+                                                <input type="text" name="pname" class="form-control" id="pname" placeholder="Enter the Pump Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="paddress">Address</label>
+                                                <input type="text" name="paddress" class="form-control" id="paddress" placeholder="Enter the pump address">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="pcity">City</label>
+                                                <input type="text" name="pcity" class="form-control" id="pcity" placeholder="Enter the City" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="ptaluka">Taluka</label>
+                                                <input type="text" name="ptaluka" class="form-control" id="ptaluka" placeholder="Enter the Taluka">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="pdistrict">District</label>
+                                                <input type="text" name="pdistrict" class="form-control" id="pdistrict" placeholder="Enter the District">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="opentime">Opening Time</label>
+                                                <input type="text" name="opentime" class="form-control" id="opentime" placeholder="Enter the Open Time">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="closetime">Closing Time</label>
+                                                <input type="text" name="closetime" class="form-control" id="closetime" placeholder="Enter the Close Time">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="pmob">Mobile Number</label>
+                                                <input type="text" name="pmob" class="form-control" id="pmob" placeholder="Enter the Mobile Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="lat">Latitude</label>
+                                                <input type="text" name="lat" class="form-control" id="lat" placeholder="Enter the Latitude">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="long">Longitude</label>
+                                                <input type="text" name="long" class="form-control" id="long" placeholder="Enter the Longitude">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="ppass">Password</label>
+                                                <input type="password" name="ppass" class="form-control" id="ppass" placeholder="Enter the Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="cngkg">CNG-KG</label>
+                                                <input type="text" name="cngkg" class="form-control" id="cngkg" placeholder="Enter the CNG-Kg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="pemail">Email</label>
+                                                <input type="text" name="pemail" class="form-control" id="pdistrict" placeholder="Enter the Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2" for="pemail">ID</label>
+                                                <input type="number" name="id" class="form-control" id="pdistrict" placeholder="Enter the ID">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-success mr-2">Submit</button>
+                                        <button type="reset" class="btn btn-warning">Reset</button>
+                                        <br>
+                                        <a href="CNG_Pumps_Login.html">Back</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script>
+        var form = document.getElementById('registerForm');
+
+        function showAlert(event) {
+            event.preventDefault();
+            swal({
+                title: "Registered!",
+                text: "Registered Successfully!",
+                icon: "success",
+            });
+
+            form.reset();
+        }
+
+        form.addEventListener('submit', showAlert);
+    </script>
+</body>
+
+</html>
